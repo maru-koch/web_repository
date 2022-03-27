@@ -9,29 +9,47 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>User DashBoard</h1>
-    <section id ="menu">
-        <div class="logo">
-            <img src="images/logo.png" alt="">
-            <h2>Dev Mentor</h2>
-        </div>
-         <div class="items">
-             <li><i class="fas fa-address"></i><a>Mentors</a></li>
-             <li><i class="fas fa-user-group"></i><a>Mentees</a></li>
-             <li><i class="fas fa-user"></i><a>Profile</a></li>
-             <li><i class="fas fa-search"></i><a>Leadership Board</a></li>
-         </div>
-    </section>
-    <section id="interface">
-        <div class="navigation">
-            <div class="n1">
-                <div class="search">
-                    <i class="far fa-search"></i>
-                </div>
+     <!-- HEADER -->
+    <div class="container">
+        <section id ="menu">
+            <div class="logo">
+                <img src="images/team-1.jpg" alt="">
+                <h2>Dev Mentor</h2>
             </div>
-        </div>
-    </section>
+            <div class="items">
+                <li><i class="fas fa-bell"></i><a>Mentors</a></li>
+                <li><i class="fas fa-user-group"></i><a>Mentees</a></li>
+                <li><i class="fas fa-user"></i><a>Profile</a></li>
+                <li><i class="fas fa-search"></i><a>Leadership Board</a></li>
+            </div>
+        </section>
+        <section id="interface">
+            <div class="navigation">
+               
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <div class="profile">
+                    <i class="far fa-bell"></i>
+                    <button class = "btn" >Log out</button>
+                </div>
+              
+            </div>
 
+            <h3 class="i-name">Dashboard</h3>
+            <div class="values">
+                <div class="value-box">
+                    <i class ="fas fa-users"></i>
+                    <div>
+                        <h3>Mentored</h3>
+                        <span>20</span>
+                    </div>
+                </div>
+                 
+            </div>
+        </section>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
