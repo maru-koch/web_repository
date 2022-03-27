@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: #fff;
+    position: relative;
+    width: 1440px;
+    height: 800px;
+}
+
+.top-panel{ 
+    position: absolute;
+    width: 1110px;
+    height: 235px;
+    left: 165px;
+    top: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.top-panel .left{ 
+    width: 445px;
+    height: 235px;
+    left: 165px;
+    top: 127px;
+}
+
+.top-panel .right{ 
+    width: 540px;
+    height: 200px;
+}
+
+.top-panel .left p{ 
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    color: #927B91;
+}
+
+.rating{
+    width: 445px;
+    height: 56px;
+    background: #F7F2F7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.rating .star i {
+    background: #EF9546;
+}
+
+.rating h3{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #512051;
+}
+
+.cover-left{
+    background-image: url('../images/top-left-cover.png');
+    height: 362px;
+    width: 584px;
+    position: absolute;
+    top:362px;
+    left: 584px;
+}
+h1{ 
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.71429px;
+    color: #512051;
+}
+.cover-right{
+    position: absolute;
+    background-image: url('../images/bottom-right-cover.png');
+    width: 1085px;
+    height: 673px;
+    left: 355px;
+    top: 127px;
+}
+.card-holder{
+    width: 1110px;
+    height: 266px;
+    position: absolute;
+    left: 141px;
+    top: 432px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: #512051;
+    height: 234px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.card-header{ 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+.card-header .name{
+    margin-left: 23px;
+}
+.card-header .name p{ 
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #EE69A4;
+    margin: 0;
+    margin-top: 5px;
+}
+.card-header .name h3{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.card p{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.232143px;
+    color: #FFFFFF;
+    margin-top: 27px;
+}

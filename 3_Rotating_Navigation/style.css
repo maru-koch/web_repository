@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css? family = Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+}
+.container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+   
+}
+
+.container.show-nav{
+    transform: rotate(-20deg)
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: #ff7979;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.container.show-nav .circle{
+    transform: rotate(-90deg)
+}
+
+.circle button{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    
+    height: 100px; 
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    font-size: 26px;
+}
+
+.circle button{
+    outline: none;
+}
+
+.circle button#open{
+    left: 60%;
+}
+
+.circle button#close{
+    top: 40%;
+    left: 20%;
+    translate: rotate(90deg);
+    transform-origin: top left;
+}
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    color: #fff;
+    margin: 40px 0;
+
+}
+/* takes the li out of the screen by -150% */
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li{
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+ 
+/* translate the nav bar item back to their origin/ their original position */
+
+.container.show-nav + nav ul li {
+    transform: translateX(0);
+    transition-delay: 0.7s;
+}
+
+nav ul li i{
+    margin-right: 10px;
+    font-size: 20px;
+
+}
+
+.content img{
+    max-width: 100%;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1{
+    margin: 0;
+}
+
+.content small{
+    font-style: italic;
+    color: #555
+}
+
+.content p{
+    color: #333;
+    line-height: 1.5;
+
+}
