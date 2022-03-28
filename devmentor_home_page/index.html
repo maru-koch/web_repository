@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <!-- HEADER -->
+    <div class="container">
+        <section id ="menu">
+            <div class="logo">
+                <img src="images/team-1.jpg" alt="">
+                <div>
+                    <h2>Dev Mentor</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="items">
+                <li><i class="fas fa-bell"></i><a>Home</a></li>
+                <li><i class="fas fa-user-group"></i><a>About</a></li>
+                <li><i class="fas fa-user"></i><a>Contact</a></li>
+                <li><i class="fas fa-search"></i><a>FAQ</a></li>
+                <li><i class="fas fa-search"></i><a>Code of Conduct</a></li>
+                <li><i class="fas fa-search"></i><a>Terms of Users</a></li>
+            </div>
+        </section>
+        <section id="interface">
+            <div class="navigation">
+               <div class = "n1">
+                   <div>
+                       <i id = "menu-btn" class="fas fa-bars"></i>
+                   </div>
+                   <div class="search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search"/>
+                    </div>
+               </div>
+                
+                <div class="profile">
+                    <i class= "far fa-bell"></i>
+                    <i class="fa-regular fa-grip-dots-vertical"></i>
+                    <button class = "btn" >Log out</button>
+                </div>
+            </div>
+
+            <div class="navigation">
+               <ul class = "n1">
+                   <l>Top Mentors</l>
+                   <l>Articles</l>
+                   <l></l>
+               </ul>
+            </div>
+
+            <div class = "value value-box-greeting-container">
+                <div class="value-box-greeting">
+                    <div>
+                        <img class = "post-header-image" src= "images/team-1.jpg" />
+                    </div>
+                    <div class = "value-box-inner">
+                        <div>
+                            <img src= "images/team-1.jpg" />
+                            <div>
+                                <h3 class = "greeting"><span>Ben Halpen</span> Wecome!</h3>
+                                <span class = date>March 28</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class = "greeting post-title"><span>Hi Franklyn,</span> Wecome!</h3>
+                                <span class = "date tags">#discuss, #javascript</span>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <i class = "fas fa-love"></i>
+                                            <p>17 reactions</p>
+                                        </div>
+                                        <div>
+                                            <i class = "fas fa-comment"></i>
+                                            <p>15 comments</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p>1 min read</p>
+                                            <button class="btn save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            </div>
+        </section>
+    </div>
+    <script>
+        $('#menu-btn').click(function() {
+            $('#menu').toggleClass('active');
+        })
+    </script>
+</body>
+</html>

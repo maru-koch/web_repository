@@ -7,6 +7,7 @@
     <title>Expandable Cards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
      <!-- HEADER -->
@@ -14,7 +15,10 @@
         <section id ="menu">
             <div class="logo">
                 <img src="images/team-1.jpg" alt="">
-                <h2>Dev Mentor</h2>
+                <div>
+                    <h2>Maru Koch</h2>
+                    <p>Gold Mentor</p>
+                </div>
             </div>
             <div class="items">
                 <li><i class="fas fa-bell"></i><a>Mentors</a></li>
@@ -25,31 +29,180 @@
         </section>
         <section id="interface">
             <div class="navigation">
-               
-                <div class="search">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search"/>
-                </div>
+               <div class = "n1">
+                   <div>
+                       <i id = "menu-btn" class="fas fa-bars"></i>
+                   </div>
+                   <div class="search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search"/>
+                    </div>
+               </div>
+                
                 <div class="profile">
-                    <i class="far fa-bell"></i>
+                    <i class= "far fa-bell"></i>
+                    <i class="fa-regular fa-grip-dots-vertical"></i>
                     <button class = "btn" >Log out</button>
                 </div>
-              
             </div>
 
+            <div class = "value value-box-greeting-container">
+                <div class="value-box-greeting">
+                    <i class ="fas fa-hello"></i>
+                    <div class = "value-box-inner">
+                        <h3 class = "greeting"><span>Hi Franklyn,</span> Wecome!</h3>
+                        <span class = date>Tues, March 28th, 2020</span>
+                    </div>
+                </div>
+            </div>
             <h3 class="i-name">Dashboard</h3>
-            <div class="values">
+
+            <div class="value">
+
                 <div class="value-box">
                     <i class ="fas fa-users"></i>
-                    <div>
+                    <div class = "value-box-inner">
                         <h3>Mentored</h3>
                         <span>20</span>
                     </div>
                 </div>
-                 
+
+                <div class="value-box">
+                    <i class ="fas fa-star"></i>
+                    <div class = "value-box-inner">
+                        <h3>Rating</h3>
+                        <span>20</span>
+                    </div>
+                </div>
+
+                <div class="value-box">
+                    <i class ="fas fa-moon"></i>
+                    <div class = "value-box-inner">
+                        <h3>Mentored</h3>
+                        <span>20</span>
+                    </div>
+                </div>                 
+            </div>
+
+            <h3 class="i-name">Mentees</h3>
+
+            <div class="board">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Title</td>
+                            <td>Status</td>
+                            <td>Role</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="people">
+                                <img src="images/team-2.jpg" alt=""/>
+                                <div class="people-de">
+                                    <h5>Wilson Ukachi</h5>
+                                    <p>ukachi2022@gmail.com</p>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>Software Engineer</h5>
+                                <p>Web dev</p>
+                            </td>
+                            <td class="active"><p>active</p></td>
+                            <td class="role"><p>owner</p></td>
+                            <td class="edit"><a>edit</a></td>
+                        </tr>
+                        <tr>
+                            <td class="people">
+                                <img src="images/team-4.jpg" alt=""/>
+                                <div class="people-de">
+                                    <h5>Akorede Olushala</h5>
+                                    <p>akorede@gmail.com</p>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>Software Engineer</h5>
+                                <p>Web dev</p>
+                            </td>
+                            <td class="active"><p>active</p></td>
+                            <td class="role"><p>owner</p></td>
+                            <td class="edit"><a>edit</a></td>
+                        </tr>
+                                             <tr>
+                            <td class="people">
+                                <img src="images/team-3.jpg" alt=""/>
+                                <div class="people-de">
+                                    <h5>Jonathan Mark</h5>
+                                    <p>ukachi2022@gmail.com</p>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>Software Engineer</h5>
+                                <p>Web dev</p>
+                            </td>
+                            <td class="active"><p>active</p></td>
+                            <td class="role"><p>owner</p></td>
+                            <td class="edit"><a>edit</a></td>
+                        </tr>
+                                             <tr>
+                            <td class="people">
+                                <img src="images/team-4.jpg" alt=""/>
+                                <div class="people-de">
+                                    <h5>Msendoo Akaetuk</h5>
+                                    <p>ukachi2022@gmail.com</p>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>Software Engineer</h5>
+                                <p>Web dev</p>
+                            </td>
+                            <td class="active"><p>active</p></td>
+                            <td class="role"><p>owner</p></td>
+                            <td class="edit"><a>edit</a></td>
+                        </tr>
+                        <tr>
+                            <td class="people">
+                                <img src="images/team-1.jpg" alt=""/>
+                                <div class="people-de">
+                                    <h5>Nwokocha Kitigo</h5>
+                                    <p>ukachi2022@gmail.com</p>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>Software Engineer</h5>
+                                <p>Web dev</p>
+                            </td>
+                            <td class="active"><p>active</p></td>
+                            <td class="role"><p>owner</p></td>
+                            <td class="edit"><a>edit</a></td>
+                        </tr> 
+                        <tr>
+                            <td class="people">
+                                <img src="images/team-3.jpg" alt=""/>
+                                <div class="people-de">
+                                    <h5>Omaeta Johnson</h5>
+                                    <p>ukachi2022@gmail.com</p>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>Software Engineer</h5>
+                                <p>Web dev</p>
+                            </td>
+                            <td class="active"><p>active</p></td>
+                            <td class="role"><p>owner</p></td>
+                            <td class="edit"><a>edit</a></td>
+                        </tr> 
+                    </tbody>
+                </table>
             </div>
         </section>
     </div>
-    <script src="index.js"></script>
+    <script>
+        $('#menu-btn').click(function() {
+            $('#menu').toggleClass('active');
+        })
+    </script>
 </body>
 </html>
