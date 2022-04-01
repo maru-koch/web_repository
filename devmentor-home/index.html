@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <!-- HEADER -->
+    <div class="container">
+        <div id = "navigation">
+            <div class="logo">
+                <img src="images/team-1.jpg" alt="" height="40px" width="40px">
+                <div>
+                    <h2 class = "i-name">Dev Mentor</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class = "n1">
+                <div>
+                    <i id = "menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search"/>
+                </div>
+            </div>
+            
+            <div class="profile">
+                <button class="btn login">Log in</button>
+                <button class = "btn" >Sign Up</button>
+            </div>
+        </div>
+        
+        <section id="interface">
+             <!-- LEFT -->
+            <section id ="menu">
+                <div class = "dev-panel">
+                    <h2>The <span>Dev Mentor</span> is a community of amazing developers</h2>
+                    <p>We are a community where developers are mentored by experienced and more senior developers with clear road maps and proven career paths.</p>
+                    <div class="account">
+                        <button class="btn account-btn">Create Account</button>
+                    </div>
+                </div>
+                <div class="items left">
+                    <li><i class="icons fas fa-bell"></i><a>Home</a></li>
+                    <li><i class="icons fas fa-user-group"></i><a>About</a></li>
+                    <li><i class="icons fas fa-user"></i><a>Contact</a></li>
+                    <li><i class="icons fas fa-search"></i><a>FAQ</a></li>
+                    <li><i class="icons fas fa-search"></i><a>Code of Conduct</a></li>
+                    <li><i class="icons fas fa-search"></i><a>Terms of Users</a></li>
+                    
+                </div>
+            </section>
+
+          <!-- CENTER -->
+            <main>
+                <div class = "value value-box-greeting-container">
+                    <div class = "nav">
+                        <li><a href="#"> Top Mentors</a></li>
+                        <li><a href="#"> Road Map</a></li>
+                        <li><a href="#"> Articles</a></li>
+                    </div>
+                    <div class="board">
+                        <div class = "board-header">
+                            <img class = "board-header-image" src= "images/team-1.jpg" />
+                        </div>
+                        <div class = "post">
+                            <div class = "post-author">
+                                <img class = "post-img" src= "images/team-1.jpg" />
+                                <div>
+                                    <h3 class = "name">Ben Halpen</h3>
+                                    <span class = date>March 28</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class = "post-panel">
+                                    <h3 class = "post-title">Create an SQLite Database From Excel Workbook</h3>
+                                    <ul class = "tags">
+                                        <li><a href ="#"><span>#</span>Javascript</a></li>
+                                        <li><a href ="#"><span>#</span>Python</a></li>
+                                        <li><a href ="#"><span>#</span>Django</a></li>
+                                    </ul>
+                                    <div class = "feedback-panel">
+                                        <div id = "comment-container">
+                                            <div class = "comment-panel reaction">
+                                                <i class = "fas fa-heart"></i>
+                                                <p>17 reactions</p>
+                                            </div>
+                                            <div class = "comment-panel reaction">
+                                                <i class = "fas fa-comment"></i>
+                                                <p>15 comments</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment-panel">
+                                                <p>1 min read</p>
+                                                <button class="save">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            
+            <!-- RIGHT -->
+           <section id ="menu" class ="side-bar">
+               <h2>Top Mentors</h2>
+                <div class="items"> 
+                    <li>
+                        <div class = "post-author">
+                            <img class = "post-img" src= "images/team-2.jpg" />
+                            <div class = "name-holder">
+                                <h3 class = "name">Ben Halpen</h3>
+                                <span class = date>UI/UX</span>
+                            </div>
+                            <div class = "comment-panel reaction">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                            </div>
+                         </div>
+                    </li>
+                    <li>
+                        <div class = "post-author">
+                            <img class = "post-img" src= "images/team-3.jpg" />
+                            <div class = "name-holder">
+                                <h3 class = "name">Angela You</h3>
+                                <span class = date>Front End</span>
+                            </div>
+                            <div class = "comment-panel reaction">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                            </div>
+                         </div>
+                    </li>
+                    <li>
+                        <div class = "post-author">
+                            <img class = "post-img" src= "images/team-1.jpg" />
+                            <div class = "name-holder">
+                                <h3 class = "name">Anita Lee</h3>
+                                <span class = date>Full Stack</span>
+                            </div>
+                            <div class = "comment-panel reaction">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                            </div>
+                         </div>
+                    </li>
+                    <li>
+                        <div class = "post-author">
+                            <img class = "post-img" src= "images/team-4.jpg" />
+                            <div class = "name-holder">
+                                <h3 class = "name">Amaka Obi</h3>
+                                <span class = date>UI/UX</span>
+                            </div>
+                            <div class = "comment-panel reaction">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                            </div>
+                         </div>
+                    </li>
+                    
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+    <script>
+        $('#menu-btn').click(function() {
+            $('#menu').toggleClass('active');
+        })
+    </script>
+</body>
+</html>
